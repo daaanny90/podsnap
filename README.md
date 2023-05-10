@@ -15,11 +15,11 @@ The platform allows users to:
 
 The following functions are used to process the episode:
 
-1. Function 1 reads the new URL of the original mp3 file of the episode and saves the mp3 file in the bucket.
-2. Function 2 sends the mp3 to the speech-to-text API, getting the text of the episode, and saves it in the episode document.
-3. Function 3 sends the new text to the Cloud natural language API, requesting a max 750 words summary of the text, and saves this short text in the episode document.
-4. Function 4 sends the new short text to the speech-to-text API, getting an audio version of the short text and saving it in the bucket (and the bucket location in the episode document).
-5. Function 5 sends the response to the client with the short text and playable mp3 of the short text.
+1. Function 1 reads the new URL of the original mp3 file of the episode and saves the mp3 file in the bucket. [Issue #6](https://github.com/daaanny90/PodSnap/issues/6)
+2. Function 2 sends the mp3 to the speech-to-text API, getting the text of the episode, and saves it in the episode document. [Issue #2](https://github.com/daaanny90/PodSnap/issues/2)
+3. Function 3 sends the new text to the Cloud natural language API, requesting a max 750 words summary of the text, and saves this short text in the episode document. [Issue #3](https://github.com/daaanny90/PodSnap/issues/3)
+4. Function 4 sends the new short text to the speech-to-text API, getting an audio version of the short text and saving it in the bucket (and the bucket location in the episode document). [Issue #4](https://github.com/daaanny90/PodSnap/issues/4)
+5. Function 5 sends the response to the client with the short text and playable mp3 of the short text. [Issue #5](https://github.com/daaanny90/PodSnap/issues/5)
 
 To run your own PodSnap, you need:
 
