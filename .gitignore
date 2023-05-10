@@ -1,0 +1,10 @@
+# node_modules fodlers
+node_modules/
+frontend/node_modules
+
+frontend/.svelte-kit
+credentials/*
+!credentials/.gitkeep
+
+.env
+!.env.example

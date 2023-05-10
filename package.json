@@ -1,0 +1,28 @@
+{
+  "name": "podsnap",
+  "version": "1.0.0",
+  "description": "Platform where every podcast is no longer than 5 minutes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "functions-framework --target=index"
+  },
+  "keywords": [
+    "podcasts",
+    "podsnap"
+  ],
+  "author": "Danny Spina",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.2.0",
+    "@google-cloud/language": "^5.2.2",
+    "@google-cloud/speech": "^5.4.1",
+    "@google-cloud/text-to-speech": "^4.2.2",
+    "@xmldom/xmldom": "^0.8.7",
+    "lamejs": "github:zhuker/lamejs",
+    "node-fetch": "^3.3.1",
+    "rss-parser": "^3.13.0",
+    "xmldom": "^0.6.0"
+  },
+  "type": "module"
+}
