@@ -40,7 +40,7 @@ Copy also the Firebase credentials and paste them in a file with the name `fireb
 After that, you should run two terminals. One in the root folder giving `npm run start` and the second one in the `/frontend` folder with `npm run dev`.
 
 ## Current limitations
-- When a user uses the RSS search functionality, the search is made only on iTunes.[Issue #9](https://github.com/daaanny90/PodSnap/issues/9)
+- When a user uses the RSS search functionality, the search is made only on iTunes. [Issue #9](https://github.com/daaanny90/PodSnap/issues/9)
 - Check the issues to know the status of the project, right know PodSnap can:
   - Search for a podcast name e retrieve the RSS Url
   - Upload the basic information on Firestore.
