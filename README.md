@@ -2,6 +2,8 @@
 
  This project is a platform that allows users to easily search for their favorite podcast shows and listen to a concise 5-minute version of any episode, both in audio and written form, with just one click.
 
+ It has also a search page where the user can look for a show and can get the feed RSS Url to copy and paste into PodSnap.
+
 ## Technical Documentation
 
 ### Architecture
@@ -34,6 +36,11 @@ When the GCP Project is running with Firebase, generate your service worker and 
 
 Then save the path `./credentials/<your_service_worker>.json` in the `.env` file.
 
-Copy also the Firebase credentials and paste it in a file with name `firebase_credentials.json` under `/credentials`.
+Copy also the Firebase credentials and paste them in a file with the name `firebase_credentials.json` under `/credentials`.
+After that, you should run two terminals. One in the root folder giving `npm run start` and the second one in the `/frontend` folder with `npm run dev`.
 
-After that you should run two terminals. One in the root folder giving `npm run start` and the second one in the `/frontend` folder with `npm run dev`.
+## Current limitations
+- When a user uses the RSS search functionality, the search is made only on iTunes.[Issue #9](https://github.com/daaanny90/PodSnap/issues/9)
+- Check the issues to know the status of the project, right know PodSnap can:
+  - Search for a podcast name e retrieve the RSS Url
+  - Upload the basic information on Firestore.
