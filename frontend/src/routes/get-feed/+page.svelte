@@ -51,7 +51,13 @@
 			return;
 		}
 
-		searchHistory = JSON.parse(searchHistory).push(searchHistoryItem);
+		searchHistory = JSON.parse(searchHistory) as SearchHistoryItem[]
+
+    if (!searchHistory) {
+      throw new Error("Search History is empty.");
+    }
+
+    searchHistory.push(searchHistoryItem)
 		localStorage.setItem('search_history', JSON.stringify(searchHistory));
 	};
 </script>
