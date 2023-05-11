@@ -25,7 +25,7 @@
 		}
 		loading = true;
 
-		fetch('http://localhost:8080/index', {
+		fetch('http://127.0.0.1:5001/podsnap/us-central1/parseFeed', {
 			method: 'POST',
 			mode: 'cors',
 			body: episodeUrl
